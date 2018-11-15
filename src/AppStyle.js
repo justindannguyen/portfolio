@@ -1,5 +1,5 @@
 import background from "./assets/images/bg.jpg";
-import green from '@material-ui/core/colors/green';
+import green from "@material-ui/core/colors/green";
 
 const style = theme => ({
   root: {
