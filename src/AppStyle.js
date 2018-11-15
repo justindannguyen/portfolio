@@ -1,6 +1,7 @@
 import background from "./assets/images/bg.jpg";
+import green from '@material-ui/core/colors/green';
 
-const style = {
+const style = theme => ({
   root: {
     backgroundImage: `url(${background})`,
     height: "100vh",
@@ -35,7 +36,23 @@ const style = {
     margin: "10px",
     fontFamily: '"Roboto", "Times New Roman", "serif"',
     fontWeight: "200"
+  },
+  avatar: {
+    [theme.breakpoints.up("md")]: {
+      width: 300,
+      height: 300
+    },
+    [theme.breakpoints.down("md")]: {
+      width: 200,
+      height: 200
+    }
+  },
+  button: {
+    backgroundColor: green[500],
+    "&:hover": {
+      backgroundColor: green[700]
+    }
   }
-};
+});
 
 export default style;
